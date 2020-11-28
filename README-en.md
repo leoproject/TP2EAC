@@ -14,11 +14,11 @@ characteristics about the individual as a way of predicting his annual salary cl
 ## About Team
 The developer team is four master students from University of Minho, Braga, Portugal.
 
-* [Daniel Assunção](https://github.com/)
+* [Daniel Assunção](https://github.com/guiyrt)
 * [Diogo Ferreira ](https://github.com/DiogoFerreira99)
 * [Leonardo Silva](https://github.com/leoproject)
 * [Pedro Pinheiro](https://github.com/Pinheiro9655)
-
+  
 ## Dataset
 The dataset provided to work on the proposed problem is found in the [resources] (resources /) directory which contain:
 
@@ -32,7 +32,7 @@ The dataset provided to work on the proposed problem is found in the [resources]
 
 ## Models
 
-<img align="right" src="https://media.giphy.com/media/hTOOnpWeFOnYvkYTwo/giphy.gif" width="200" height="150"/> 
+<img align="right" src="https://media.giphy.com/media/l4pTsNgkamxfk2ZLq/giphy.gif" width="200" height="150"/> 
 
 Here we discuss the models created by our group. All notebooks with their respective model follow the pipeline exposed in the standard notebook, [TP2EAC_Standard_Notebook.ipynb](models/TP2EAC_Standard_Notebook.ipynb), and are displayed on the following table:
 
