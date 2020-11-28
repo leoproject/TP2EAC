@@ -33,7 +33,7 @@ O dataset fornecido para trabalhar acerca do problema proposto encontra-se no di
 
 ## Modelos
 
-<img align="right" src="https://media.giphy.com/media/hTOOnpWeFOnYvkYTwo/giphy.gif" width="200" height="150"/> 
+<img align="right" src="https://media.giphy.com/media/hTOOnpWeFOnYvkYTwo/giphy.gif" width="150" height="150"/> 
 
 Aqui nos discutiremos os modelos criados pelo grupo. Todos os notebooks com seus respectivos modelos e descição estãonas suas respectivas diretórias, seguindo o pipeline exposto neste notebook padrão [TP2EAC_Standard_Notebook.ipynb](models/TP2EAC_Standard_Notebook.ipynb), demonstrado na tabela abaixo:
 
