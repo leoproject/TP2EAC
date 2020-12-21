@@ -34,9 +34,9 @@ Para a geração dos modelos foi realizado um pipeline da seguinte forma :
 
 1. **Analise dos Dados:** processo ao qual foi realizado um estudo sobre os dados e as features presente no dataset de treino;
 
-2. **Preparação dos Dados:** aqui o processo foi dar o [input](../TP2EAC/Data_Preparation/Input/) do dataset de treino e teste, preparar os dados e verificar correlações com a target produzindo no final um [output dos datasets](../TP2EAC/Data_Preparation/Output/) (de treino e teste ) com tratamento dos dados e outros dois que para além do tratamento os dados foram normalizados. 
+2. **Preparação dos Dados:** aqui o processo teve como  [input](../TP2EAC/Data_Preparation/Input/) os datasets de treino e teste. Preparou-se os dados e verificou-se as correlações com a target produzindo no final [outputs](../TP2EAC/Data_Preparation/Output/) em forma de datasets. Sendo eles de treino e teste com tratamento dos dados e outros dois que contenham para além do tratamento os dados tenha normalização. 
 
-3. **Modelação dos Algoritmos:** para a titulo depadronização para o flow do desenvolvimento dos modelos, fizemos um [notebook padrão](models/reglog/TP2EAC-STANDARD-MODEL.ipynb) usando o algoritmo de regressão logistica. O output dos notebook dos modelos é o proprio modelo do algoritmo guardado para caso for escolhido ser colocado em produção. 
+3. **Modelação dos Algoritmos:** para a titulo de padronização  do flow de desenvolvimento dos modelos, fizemos um [notebook padrão](models/reglog/TP2EAC-STANDARD-MODEL.ipynb) usando o algoritmo de regressão logistica. O output do notebook é o proprio modelo do algoritmo guardado em disco, para caso este for escolhido como o melhor. Será colocado em produção. 
 
 
 
