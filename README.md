@@ -3,9 +3,10 @@
 
 <img align="left" src="https://media.giphy.com/media/ADgfsbHcS62Jy/giphy.gif" width="200" height="200" /> 
 
-TP2AEC Este projeto foi realizado em nome de uma disciplina do nosso 4º ano do Mestrado em Sistemas Inteligentes. Seu objetivo é conseguir um modelo viável o suficiente para produzir bons resultados no seguinte problema: Preparação e análise de um dataset relativo às características de funcionários de múltiplas empresas, como forma de prever o nível salarial anual do indivíduo.
-Este projeto baseia-se num conjunto de casos de estudo apresentando informações referentes a funcionários de empresas espalhadas pelo mundo, onde são analisadas múltiplas
-características sobre o indivíduo como forma de prever a sua classe salarial anual.
+O TP2EAC - É um projeto realizado para uma disciplina do 4º ano do Mestrado em Engenharia Informática, do perfil de Sistemas Inteligentes. Seu objetivo é conseguir um modelo de classificação a produzir bons resultados. Neste trabalho temos os seguintes problemas: Preparação e análise de um dataset relativo às características de funcionários de múltiplas empresas, no intuito de prever o nível salarial anual do indivíduo.
+Este projeto baseia-se num conjunto de casos de estudo, os quais apresentadam informações referentes aos funcionários de empresas espalhadas pelo mundo, as quais possuem
+ multiplas características sobre o indivíduo.
+
 
 
 
@@ -21,56 +22,33 @@ A equipa desenvolvedora é composta por 4 alunos da Universidade do Minho, Braga
 * [Pedro Pinheiro](https://github.com/Pinheiro9655)
 
 ## Dataset
-O dataset fornecido para trabalhar acerca do problema proposto encontra-se no diretório [recursos](resources/) que contêm :
+O dataset fornecido para trabalhar neste problema, encontra-se no diretório [recursos](resources/) deste repositório. Nele contêm :
 
- 1. training.csv, onde se apresentam os casos de estudo a serem aplicados exclusivamente para o treino do modelo preditivo;
+1. training.csv, este apresenta os casos de estudo a serem usados exclusivamente para o treino dos modelos;
 
-1. test.csv, onde se apresentam os casos de estudo a serem aplicados exclusivamente para a análise e validação do modelo preditivo;
+2. test.csv, este apresenta os registos para validação dos modelos;
 
-2. attribute_info.docx, onde são apresentados alguns detalhes relativamente aos atributos do conjunto de dados fornecidos. Contendo 14 atributos e uma target de classificação salario anual maior que 50k por ano.
+3. attribute_info.docx, neste documento é apresentado alguns detalhes relativamente do conjunto de atributos presentes nos datasets. Contendo 14 atributos e uma target de classificação que é salario anual.
+   
 
-# Processo da Geração dos Modelos:
-Para a geração dos modelos foi realizado um pipeline da seguinte forma :
+# Metodologia de Desenvolvimento:
+<img align="right" src="https://media.giphy.com/media/l4pTsNgkamxfk2ZLq/giphy.gif" width="200" height="150"/> 
+A metodologia adotada pela equipa é a CRISP-DM (Cross Industry Standard Process for Data Mining) consiste num ciclo composto por 6 fases.
 
-1. **Analise dos Dados:** processo ao qual foi realizado um estudo sobre os dados e as features presente no dataset de treino;
+1. **Estudo do Negócio:** Esta fase inicial foi o estudo do dataset perceber qual objetivo e atributos presentes no dataset;
 
-2. **Preparação dos Dados:** aqui o processo teve como  [input](../TP2EAC/Data_Preparation/Input/) os datasets de treino e teste. Preparou-se os dados e verificou-se as correlações com a target produzindo no final [outputs](../TP2EAC/Data_Preparation/Output/) em forma de datasets. Sendo eles de treino e teste com tratamento dos dados e outros dois que contenham para além do tratamento os dados tenha normalização. 
+2. **Analise dos Dados:** Esta fase foi concretizada pelo estudo sobre os dados e as features, presente no dataset de treino em especial. Esta fase pode ser encontrada no [notebook da analise dos dados](../TP2EAC/data_analyse/Input/);
 
-3. **Modelação dos Algoritmos:** para a titulo de padronização  do flow de desenvolvimento dos modelos, fizemos um [notebook padrão](models/reglog/TP2EAC-STANDARD-MODEL.ipynb) usando o algoritmo de regressão logistica. O output do notebook é o proprio modelo do algoritmo guardado em disco, para caso este for escolhido como o melhor. Será colocado em produção. 
+3. **Preparação dos Dados:** Nesta fase foi confeccionado um notebook o qual teve como  [input](../TP2EAC/Data_Preparation/Input/) os datasets de treino e teste, forneceidos pela equipa docente. 
+   
+   A seguir foi verificado missing values, correlações, feature engineering entre outras técnicas. O [output](../TP2EAC/Data_Preparation/Output/) deste notebook foi geração de novos datasets. Sendo eles de treino e teste, com o tratamento dos dados e outros para além do tratamento dos dados contêm a normalização. Resultando em 4 datasets ( 2 de treino e 2 de teste). Estes serão usados na fase posterior;
 
+4. **Modelação dos Algoritmos:** Para esta fase para padronização  do flow de desenvolvimento dos modelos, fizemos um [notebook padrão](models/reglog/TP2EAC-STANDARD-MODEL.ipynb) usando o algoritmo de regressão logistica. O qual o output é o próprio modelo de classificação do algoritmo em uso.  Uma vez guardado todos os modelos gerados pelos algoritmos escolhidos iremos para próxima fase;
 
+5. **Avaliação dos Modelos:** Esta fase tem-se o [notebook de avaliação](benchmark/TP2AEC-AVALIACAO.ipynb) com todos os modelos para possamos visualizar e comparar os resultados dos modelos usando os datasets de teste seja o com normalização ou não. Uma vez decidido qual é o melhor modelo de classificação para este problema este passará para próxima fase;
+   
+6. **Desenvolvimento:** Esta fase é colocar o modelo escolhido na fase anterior em produção, para isso foi utilizado o Heroku e criado uma API para aceder ao modelo com Flask, o qual encontra-se num [repositório](https://github.com/leoproject/appModel) a parte. Caso deseje testar a api com o modelo em produção temos um notebook para isso na diretória [testApi](testApi/Testar%20Modelo.ipynb).
 
-## Modelos
-
-<img align="right" src="https://media.giphy.com/media/l4pTsNgkamxfk2ZLq/giphy.gif" width="150" height="150"/> 
-
-Aqui nos discutiremos os modelos criados pelo grupo. Todos os notebooks com seus respectivos modelos e descição estãonas suas respectivas diretórias, seguindo o pipeline exposto neste notebook padrão [TP2EAC_Standard_Notebook.ipynb](models/reglog/TP2EAC-STANDARD-MODEL.ipynb), demonstrado na tabela abaixo:
-
-
-
-Link do modelo| Breve Descrição | Artigo sobre o Modelo| 
---- | --- | --- | 
-[TP2EAC_KNN](models/knn/) | | [Artigo]()
-[TP2EAC_CBR](models/cbr/) | | [Artigo]()
-[TP2EAC_SVM](models/svm/) | |[Artigo]()
-[TP2EAC_ANN](models/ann/)|  |[Artigo]()
-[TP2EAC_Regressão Logística](models/reglog/)|  | [Artigo]()
-[TP2EAC_Naive Bayes](models/naive/)| | [Artigo]()
-
-
-
-## Resultados
-
-
-|             | Accuracy | Precision | Precision | Recall   | Recall  |            
-|:-----------:|:--------:|:--------:|:---------:|:---------:|:--------:|
-|             |          | > 50k/Y  |   <=50k/Y |  > 50k/Y  | <=50k/Y  |                 
-|    KNN      |          |          |           |           |          |
-|    CBR      |          |          |           |           |          |
-|    SVM      |          |          |           |           |          | 
-|    ANN      |          |          |           |           |          |
-|   Reg Log   |          |          |           |           |          |   
-| Naive Bayes |          |          |           |           |          | 
 
 
 
