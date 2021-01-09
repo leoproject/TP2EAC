@@ -37,9 +37,9 @@ A metodologia adotada pela equipa é a CRISP-DM (Cross Industry Standard Process
 
 1. **Estudo do Negócio:** Esta fase inicial foi o estudo do dataset perceber qual objetivo e atributos presentes no dataset;
 
-2. **Analise dos Dados:** Esta fase foi concretizada pelo estudo sobre os dados e as features, presente no dataset de treino em especial. Esta fase pode ser encontrada no [notebook da analise dos dados](../TP2EAC/data_analyse/Input/);
+2. **Analise dos Dados:** Esta fase foi concretizada pelo estudo sobre os dados e as features, presente no dataset de treino em especial. Esta fase pode ser encontrada no [notebook da analise dos dados](../TP2EAC/data_analyse/TP2EAC_AnaliseDados.ipynb);
 
-3. **Preparação dos Dados:** Nesta fase foi confeccionado um notebook o qual teve como  [input](../TP2EAC/Data_Preparation/Input/) os datasets de treino e teste, forneceidos pela equipa docente. 
+3. **Preparação dos Dados:** Nesta fase foi confeccionado um [notebook](../TP2EAC/data_preparation/TP2EAC_Preparação_dos_Dados.ipynb) o qual teve como  [input](../TP2EAC/Data_Preparation/Input/) os datasets de treino e teste, forneceidos pela equipa docente. 
    
    A seguir foi verificado missing values, correlações, feature engineering entre outras técnicas. O [output](../TP2EAC/Data_Preparation/Output/) deste notebook foi geração de novos datasets. Sendo eles de treino e teste, com o tratamento dos dados e outros para além do tratamento dos dados contêm a normalização. Resultando em 4 datasets ( 2 de treino e 2 de teste). Estes serão usados na fase posterior;
 
@@ -53,3 +53,6 @@ A metodologia adotada pela equipa é a CRISP-DM (Cross Industry Standard Process
 
 
 ## Considerações Finais
+Com a resolução deste trabalho, o grupo desenvolveu capacidades para criar e treinar modelos de classificação usando uma grande variedade de algoritmos diferentes. Também evoluímos no que toca á análise e preparação de dados, que são duas fases importantes para qualquer desenvolvimento de um método de classificação e previsão.
+
+Posto isto, concluímos que o melhor modelo treinado pelo nosso grupo, se analisarmos só pela acurácia dos modelos, é o que implementa o algoritmo K-Nearest-Neighbors. No entanto, o que o grupo escolheria para a fase de Desenvolvimento, por critérios estabelecidos anteriormente, escolheríamos o modelo que implementa o algoritmo de Regressão Logística, utilizando o método criado pelo nosso grupo.
