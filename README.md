@@ -37,11 +37,11 @@ A metodologia adotada pela equipa é a CRISP-DM (Cross Industry Standard Process
 
 1. **Estudo do Negócio:** Esta fase inicial foi o estudo do dataset perceber qual objetivo e atributos presentes no dataset;
 
-2. **Analise dos Dados:** Esta fase foi concretizada pelo estudo sobre os dados e as features, presente no dataset de treino em especial. Esta fase pode ser encontrada no [notebook da analise dos dados](../TP2EAC/data_analysis/TP2EAC_AnaliseDados.ipynb);
+2. **Analise dos Dados:** Esta fase foi concretizada pelo estudo sobre os dados e as features, presente no dataset de treino em especial. Esta fase pode ser encontrada no [notebook da analise dos dados](data_analysis/TP2EAC_AnaliseDados.ipynb);
 
-3. **Preparação dos Dados:** Nesta fase foi confeccionado um [notebook](../TP2EAC/Data_Preparation/TP2EAC_Preparação_dos_Dados.ipynb) o qual teve como  [input](../TP2EAC/Data_Preparation/Input) os datasets de treino e teste, forneceidos pela equipa docente. 
+3. **Preparação dos Dados:** Nesta fase foi confeccionado um [notebook](/Data_Preparation/TP2EAC_Preparação_dos_Dados.ipynb) o qual teve como  [input](Data_Preparation/Input) os datasets de treino e teste, forneceidos pela equipa docente. 
    
-   A seguir foi verificado missing values, correlações, feature engineering entre outras técnicas. O [output](../TP2EAC/Data_Preparation/Output) deste notebook foi geração de novos datasets. Sendo eles de treino e teste, com o tratamento dos dados e outros para além do tratamento dos dados contêm a normalização. Resultando em 4 datasets ( 2 de treino e 2 de teste). Estes serão usados na fase posterior;
+   A seguir foi verificado missing values, correlações, feature engineering entre outras técnicas. O [output](Data_Preparation/Output) deste notebook foi geração de novos datasets. Sendo eles de treino e teste, com o tratamento dos dados e outros para além do tratamento dos dados contêm a normalização. Resultando em 4 datasets ( 2 de treino e 2 de teste). Estes serão usados na fase posterior;
 
 4. **Modelação dos Algoritmos:** Para esta fase para padronização  do flow de desenvolvimento dos modelos, fizemos um [notebook padrão](models/reglog/TP2EAC-STANDARD-MODEL.ipynb) usando o algoritmo de regressão logistica. O qual o output é o próprio modelo de classificação do algoritmo em uso.  Uma vez guardado todos os modelos gerados pelos algoritmos escolhidos iremos para próxima fase;
 
