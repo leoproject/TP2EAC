@@ -1,0 +1,3 @@
+[submodule "submdule/AppAEC"]
+	path = submdule/AppAEC
+	url = https://github.com/leoproject/TP2EAC
