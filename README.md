@@ -39,7 +39,7 @@ A metodologia adotada pela equipa é a CRISP-DM (Cross Industry Standard Process
 
 2. **Analise dos Dados:** Esta fase foi concretizada pelo estudo sobre os dados e as features, presente no dataset de treino em especial. Esta fase pode ser encontrada no [notebook da analise dos dados](data_analysis/TP2EAC_AnaliseDados.ipynb);
 
-3. **Preparação dos Dados:** Nesta fase foi confeccionado um [notebook](/Data_Preparation/TP2EAC_Preparação_dos_Dados.ipynb) o qual teve como  [input](Data_Preparation/Input) os datasets de treino e teste, forneceidos pela equipa docente. 
+3. **Preparação dos Dados:** Nesta fase foi confeccionado um [notebook](Data_Preparation/TP2EAC_Preparação_dos_Dados.ipynb) o qual teve como  [input](Data_Preparation/Input) os datasets de treino e teste, forneceidos pela equipa docente. 
    
    A seguir foi verificado missing values, correlações, feature engineering entre outras técnicas. O [output](Data_Preparation/Output) deste notebook foi geração de novos datasets. Sendo eles de treino e teste, com o tratamento dos dados e outros para além do tratamento dos dados contêm a normalização. Resultando em 4 datasets ( 2 de treino e 2 de teste). Estes serão usados na fase posterior;
 
@@ -47,7 +47,7 @@ A metodologia adotada pela equipa é a CRISP-DM (Cross Industry Standard Process
 
 5. **Avaliação dos Modelos:** Esta fase tem-se o [notebook de avaliação](benchmark/TP2AEC-AVALIACAO.ipynb) com todos os modelos para possamos visualizar e comparar os resultados dos modelos usando os datasets de teste seja o com normalização ou não. Uma vez decidido qual é o melhor modelo de classificação para este problema este passará para próxima fase;
    
-6. **Desenvolvimento:** Esta fase é colocar o modelo escolhido na fase anterior em produção, para isso foi utilizado o Heroku e criado uma API para aceder ao modelo com Flask, o qual encontra-se num [repositório](https://github.com/leoproject/appModel) a parte. Caso deseje testar a api com o modelo em produção temos um notebook para isso na diretória [testApi](testApi/Testar%20Modelo.ipynb).
+6. **Desenvolvimento:** Esta fase é colocar o modelo escolhido na fase anterior em produção, para isso foi utilizado o Heroku e criado uma API para aceder ao modelo com Flask, o qual encontra-se num [repositório](https://github.com/leoproject/appModel) a parte. Caso deseje testar a api com o modelo em produção temos um notebook para isso na diretória [testApi](testApi/Testar%20Modelo.ipynb) e também temos um [APK](testApi/appEquipa9.apk), para instalar em sistemas operacionais Android, para aqueles que querem experimentar aplicação criada. Bem como o projeto IONIC da aplicação [Projeto da app](testApi/AppAEC/).
 
 
 
