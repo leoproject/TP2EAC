@@ -47,7 +47,7 @@ A metodologia adotada pela equipa é a CRISP-DM (Cross Industry Standard Process
 
 5. **Avaliação dos Modelos:** Esta fase tem-se o [notebook de avaliação](benchmark/TP2AEC-AVALIACAO.ipynb) com todos os modelos para possamos visualizar e comparar os resultados dos modelos usando os datasets de teste seja o com normalização ou não. Uma vez decidido qual é o melhor modelo de classificação para este problema este passará para próxima fase;
    
-6. **Desenvolvimento:** Esta fase é colocar o modelo escolhido na fase anterior em produção, para isso foi utilizado o Heroku e criado uma API para aceder ao modelo com Flask, o qual encontra-se num [repositório](https://github.com/leoproject/appModel) a parte. Caso deseje testar a api com o modelo em produção temos um notebook para isso na diretória [testApi](testApi/Testar%20Modelo.ipynb) e também temos um [APK](testApi/appEquipa9.apk), para instalar em sistemas operacionais Android, para aqueles que querem experimentar aplicação criada. Bem como o projeto IONIC da aplicação [Projeto da app](testApi/AppAEC/).
+6. **Desenvolvimento:** Esta fase é colocar o modelo escolhido na fase anterior em produção, para isso foi utilizado o Heroku e criado uma API para aceder ao modelo com Flask, o qual encontra-se num [repositório](https://github.com/leoproject/appModel) a parte. Caso deseje testar a api com o modelo em produção temos um notebook para isso na diretória [testApi](testApi/Testar%20Modelo.ipynb) e também temos um [APK](testApi/appEquipa9.apk), para instalar em sistemas operacionais Android, para aqueles que querem experimentar aplicação criada.
 
 
 
