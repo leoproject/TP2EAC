@@ -1,5 +1,5 @@
 # TP2EAC
-[Version Portuguese](README.md)
+[Version Portuguese](README-pt.md)
 
 <img align="left" src="https://media.giphy.com/media/ADgfsbHcS62Jy/giphy.gif" width="200" height="200" /> 
 
